@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container{
+    background-color: rgba(245, 245, 245, 0.922);
+    padding: 30px 40px;
+    height: 100vw;
+    height: 100vw;
+}
+
+header{
+    border-bottom: 1px solid rgb(131, 130, 130);
+    border-width: 90%;
+    padding: 30px 0px;
+}
+
+
+.container .name{
+    font-weight: 500;
+    font-size: 35px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+header .title{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+header .title div:nth-of-type(2){
+    border: 1px solid black;
+    margin: 0px 20px;
+    height: 10px;
+}
+
+.description{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+main{
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+main div{
+    text-align: left;
+    width: 100%;
+}
+
+main h4{
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px 0px; 
+}
+main .title{
+    padding: 10px 0px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+main .work{
+    padding-left: 15px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+main .work p{
+    padding: 2px 0px;
+
+}
+
+.school{
+    padding-bottom: 15px;
+}
