@@ -11,99 +11,70 @@
 }
 
 .container {
-  padding: 20px 50px;
+  padding: 10px 50px;
   height: 100vw;
   height: 100vw;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.image-container img{
-    object-fit: cover;
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
+.image-container img {
+  object-fit: cover;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
 }
 
 header .name {
-    font-weight: 500;
-    font-size: 32px;
-    letter-spacing: 10px;
-    text-transform: uppercase;
-    color: var(--blue);
-    padding-bottom: 30px;
-  }
-
-header .title {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-}
-
-header .title div:nth-of-type(2) {
-    border: 1px solid black;
-    margin: 0px 20px;
-    height: 10px;
-  }
-
-.description {
-    padding: 20px 0px;
-    font-size: 20px;
-    letter-spacing: 3px;
-
-  }
-.icons{
-    display: flex;
-    padding: 20px 0px;
-    border-bottom: 1px solid var(--blue);
-}
-
-.icons a{
-    text-decoration: none;
-    color: var(--blue);
-    padding-right: 15px;
-    font-size: 20px;
-}
-
-.icons a:hover{
-    scale: 1.1;
-}
-  
-  
-
-/*
-.introduction{
-    display: flex;
-}
-
-.image-container{
-    width: 400px;
-    height: 400px;
-}
-
-.container .name {
   font-weight: 500;
   font-size: 32px;
   letter-spacing: 10px;
   text-transform: uppercase;
-  padding-bottom: 20px;
   color: var(--blue);
+  padding-bottom: 30px;
+}
+
+header .title {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+header .title div:nth-of-type(2) {
+  border: 1px solid black;
+  margin: 0px 20px;
+  height: 10px;
 }
 
 .description {
-  font-size: 15px;
-  font-weight: 300;
+  padding: 10px 0px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.icons {
+  display: flex;
+  padding: 20px 0px;
+  border-bottom: 1px solid var(--blue);
+}
+
+.icons a {
+  text-decoration: none;
+  color: var(--blue);
+  padding-right: 15px;
+  font-size: 20px;
+}
+
+.icons a:hover {
+  scale: 1.1;
 }
 
 main {
   display: flex;
-  padding-top: 30px;
+  padding-top: 20px;
   justify-content: space-between;
-  max-width: 95%;
-  margin: 0 auto;
 }
 
 main div {
@@ -112,26 +83,40 @@ main div {
 }
 
 main h4 {
-  font-weight: 400;
+  font-weight: bold;
+  color: var(--blue);
   font-size: 18px;
   padding: 10px 0px;
 }
+
 main .title {
   padding: 10px 0px;
   font-weight: 300;
   font-size: 15px;
 }
 
-main .work {
-  padding-left: 15px;
-  font-size: 14px;
-  margin-bottom: 15px;
+main .work p {
+  padding: 2px 16px;
+  position: relative;
 }
 
-main .work p {
-  padding: 2px 0px;
+main .work p::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  transform: translateY(50%);
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: var(--blue);
 }
 
 .school {
   padding-bottom: 15px;
-} */
+}
+
+h4 {
+  font-size: 20px;
+  padding: 2px 0px;
+}
